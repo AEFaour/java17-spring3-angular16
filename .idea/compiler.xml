@@ -11,5 +11,10 @@
         <module name="server-user-management.main" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="server-user-management" target="17" />
+      <module name="server-user-management.main" target="17" />
+      <module name="server-user-management.test" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>

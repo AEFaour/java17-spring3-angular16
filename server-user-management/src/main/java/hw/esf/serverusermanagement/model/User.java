@@ -2,11 +2,13 @@ package hw.esf.serverusermanagement.model;
 
 import jakarta.persistence.*;
 
+
 import java.io.Serializable;
 
 
 @Entity
 @Table(name="user")
+
 public class User implements Serializable {
 
     @Id
@@ -16,11 +18,9 @@ public class User implements Serializable {
     @Column(name="name")
     private String name;
 
-    @Column(name = "username")
+    @Column(name="username")
     private String username;
 
     @Column(name="password")
     private String password;
-
-
 }
