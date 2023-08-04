@@ -1,6 +1,7 @@
 package hw.esf.serverusermanagement.model;
 
 import jakarta.persistence.*;
+import lombok.Data;
 
 
 import java.io.Serializable;
@@ -8,7 +9,7 @@ import java.io.Serializable;
 
 @Entity
 @Table(name="user")
-
+@Data
 public class User implements Serializable {
 
     @Id
@@ -23,4 +24,8 @@ public class User implements Serializable {
 
     @Column(name="password")
     private String password;
+
+    @Enumerated(EnumType.STRING)
+    @Column(name = "role")
+    private Role role;
 }
